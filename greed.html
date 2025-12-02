@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+.container{padding:20px}
+.grid{
+  display:grid;
+  gap:15px;
+  grid-template-columns:repeat(1,1fr);
+}
+.card{
+  background:#fff;
+  padding:10px;
+  border-radius:10px;
+  box-shadow:0 2px 8px #0002;
+}
+.card img{
+  width:100%;
+  border-radius:8px;
+}
+
+
+@media(min-width:480px){ .grid{grid-template-columns:repeat(2,1fr);} }
+@media(min-width:768px){ .grid{grid-template-columns:repeat(3,1fr);} }
+@media(min-width:1024px){ .grid{grid-template-columns:repeat(4,1fr);} }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Responsive Product Grid</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://via.placeholder.com/300" />
+      <h3>Product 1</h3>
+      <p>₹999</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" />
+      <h3>Product 2</h3>
+      <p>₹1499</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" />
+      <h3>Product 3</h3>
+      <p>₹799</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" />
+      <h3>Product 4</h3>
+      <p>₹1299</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Menu Using Block, Inline-block, Float & Clear</title>
+
+  <style>
+  
+    nav {
+      background: #222;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline-block;   
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 12px;
+      display: block;  
+    }
+
+    nav ul li a:hover {
+      background: #444;
+      border-radius: 5px;
+    }
+
+    
+    .left-box {
+      float: left;
+      width: 45%;
+      background: #e8e8e8;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    .right-box {
+      float: right;
+      width: 45%;
+      background: #d0d0d0;
+      padding: 20px;
+      margin: 10px;
+    }
+
+    
+    .clear {
+      clear: both;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2 style="margin: 20px;">Float and Clear Example</h2>
+
+  <!-- FLOAT BOXES -->
+  <div class="left-box">This is a left floated box.</div>
+  <div class="right-box">This is a right floated box.</div>
+
+  <!-- CLEAR -->
+  <div class="clear"></div>
+
+  <p style="margin: 20px;">This paragraph is below the floated boxes because of the clear property.</p>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment08</title>
+    <style>
+        body{
+            margin: 20px;
+            background-color: lightblue;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .card{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            width: 200px;
+            text-align: center;
+
+        }
+        .avatar{
+            background-color: lightgreen;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            font-size: 30px;
+            margin: auto;
+            margin-bottom: 10px;
+            display: flex; justify-content: center; align-items: center;
+        }
+        .name{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .detail{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>Student profile card</h2></center>
+    <div class="container">
+        <div class="card"> 
+      <div class="avatar">JK</div> 
+      <div class="name">Jeet Kumar</div> 
+      <div class="detail">B.Tech - CSE</div> 
+      <div class="detail">Roll No: 21CS1007</div> 
+      <div class="detail">1st Year</div> 
+        </div>
+         <div class="card"> 
+      <div class="avatar">AKK</div> 
+      <div class="name">Ankit Kumar Kushwa</div> 
+      <div class="detail">B.Tech - CSE</div> 
+      <div class="detail">Roll No: 21CS1008</div> 
+      <div class="detail">1st Year</div> 
+        </div>
+         <div class="card"> 
+      <div class="avatar">AM</div> 
+      <div class="name">Ayush Mahato</div> 
+      <div class="detail">B.Tech - CSE</div> 
+      <div class="detail">Roll No: 21CS1009</div> 
+      <div class="detail">1st Year</div> 
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
+
+
